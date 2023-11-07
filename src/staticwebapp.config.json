@@ -5,16 +5,12 @@
             "rewrite": "/.auth/login/github"
         },
         {
-          "route": "/*",
-          "allowedRoles": ["learner","reader"]
-        },
-        {
-          "route": "/.auth/login/*",
-          "statusCode": 404
-        },
-        {
           "route": "/logout",
           "redirect": "/.auth/logout"
+        },
+        {
+            "route": "/*",
+            "allowedRoles": ["learner","reader"]
         }
       ],
       "navigationFallback": {
