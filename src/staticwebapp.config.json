@@ -1,15 +1,15 @@
 {
     "routes": [
         {
+            "route": "/login",
+            "rewrite": "/.auth/login/github"
+        },
+        {
           "route": "/*",
           "allowedRoles": ["learner","reader"]
         },
         {
-          "route": "/login",
-          "rewrite": "/.auth/login/github"
-        },
-        {
-          "route": "/.auth/login/twitter",
+          "route": "/.auth/login/*",
           "statusCode": 404
         },
         {
