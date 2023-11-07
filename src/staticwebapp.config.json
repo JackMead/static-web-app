@@ -28,5 +28,16 @@
         "404": {
           "rewrite": "/404.html"
         }
-      }
+      },
+      "auth": {
+        "rolesSource": "/api/http_trigger",
+        "identityProviders": {
+          "github": {
+            "registration": {
+                "clientIdSettingName": "GITHUB_CLIENT_ID",
+                "clientSecretSettingName": "GITHUB_CLIENT_SECRET"
+            }
+          }
+       }
+    }
 }
